@@ -26,11 +26,11 @@ from os.path import join
 
 
 # Declarações globais
-PASTA_GERADOR = join("/home","programador","Gerador")
-MODELO_PRINCIPAL = join(PASTA_GERADOR,"modelo.tex")
-ASSINATURA = join(PASTA_GERADOR,"assinatura.jpg")
-DESENHO = join(PASTA_GERADOR,"desenho.png")
-SIMBOLO = join(PASTA_GERADOR,"simbolo.png")
+PASTA_RECURSOS = join("/home","programador","Gerador","recursos")
+MODELO_PRINCIPAL = join(PASTA_RECURSOS,"modelo.tex")
+ASSINATURA = join(PASTA_RECURSOS,"assinatura.jpg")
+DESENHO = join(PASTA_RECURSOS,"desenho.png")
+SIMBOLO = join(PASTA_RECURSOS,"simbolo.png")
 PASTA_TEMPORARIA = "/tmp"
 PASTA_ATUAL = os.getcwd()
 
