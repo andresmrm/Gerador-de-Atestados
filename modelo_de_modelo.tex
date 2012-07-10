@@ -1,0 +1,71 @@
+\documentclass[16pt]{scrartcl}
+\usepackage[a4paper,left=0cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{pdflscape,setspace,amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage{tgschola}
+\usepackage{fourier-orns}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage[normalem]{ulem}
+\usepackage{charter}
+\usepackage{microtype}
+\hyphenpenalty 100000
+%=============================
+\usepackage{datatool}
+\DTLloaddb{nomes}{nomes}
+%=============================
+\def\signature#1#2{\parbox[b]{1in}{\smash{#1}\vskip12pt}
+\hfill \parbox[t]{2.8in}{\shortstack{\vrule width 2.8in height 0.4pt\\\small#2}}}
+\def\sigskip{\vskip0.4in plus 0.1in}
+        \def\beginskip{\vskip0.5875in plus 0.1in}
+%=============================
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\TileWallPaper{1\paperwidth}{1\paperheight}{desenho.png}
+%=============================
+\DTLforeach{nomes}{\nome=Nome}{
+
+{\centering
+{\doublespacing
+\includegraphics[width=0.5\linewidth]{simbolo}\par
+{\Large \bfseries {Atestado}}\par
+{\large \itshape { [TITULO] }}\par
+}
+\par}
+
+\vskip1.5em
+
+%{\doublespacing
+\begin{spacing}{0.9}
+{ \footnotesize
+\noindent
+[TEXTO]
+}
+\end{spacing}
+
+
+\noindent
+%\beginskip
+{\singlespacing
+\vfill
+\hfill
+\begin{minipage}[r]{3.5in}
+%\sigskip
+\includegraphics[width=3in]{assinatura}
+\signature{}
+{ Prof. Dr. Antedeguemon \\ Diretor Científico da Caverna }
+\end{minipage}} \par
+%=============================
+\vskip0.7em
+{\singlespacing \centering \scriptsize
+Gwg ger ger g reg erg re ge rg e v gvrwegergre greg}
+
+
+\pagebreak
+\newpage
+}
+\end{landscape}
+\end{document} 
