@@ -14,7 +14,7 @@ Como gerar atestados:
 5. Rode *gerador_atestados.py*
 
 
-Como envia-los emails:
+Como envia-los por email:
 ----------
 
 1. Instale e configure o Mutt
